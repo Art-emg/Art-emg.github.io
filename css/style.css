@@ -2,9 +2,7 @@
 
 body {
 	background-color: #C0D5FC;
-}
-h1{
-	font-family: 'Amatic SC', cursive;
+		font-family: 'Amatic SC', cursive;
 	font-weight: bold;
 
 }
@@ -19,23 +17,28 @@ h1{
 
 
  .img_sign{
-	width: 160px;
+	width: 150px;
 }
-#zero{
-	height: 20px;
+.content{
+	margin-top: 40px;
 }
+.block_sign{
+	margin-bottom: 30px;
 
-/* ++ Вращение и смена картинок */
-
+}
+/* ++ Анимация при наведении */
+	
+	/*картинок*/
 	div.rot_img {
 	  margin:0 auto;
 
 	}
 	div.rot_img img {
-	  width: 160px;
-	  -moz-transition: all 0.4s ease-in-out;
-	  -webkit-transition: all 0.4s ease-in-out;
-	  -o-transition: all 0.4s ease-in-out;
+	  width: 150px;
+	  z-index: 2;
+		  -moz-transition: all 0.4s ease-in-out;
+		  -webkit-transition: all 0.4s ease-in-out;
+		  -o-transition: all 0.4s ease-in-out;
 	  transition: all 0.4s ease-in-out;
 	}
 
@@ -47,18 +50,47 @@ h1{
 	  opacity:0;
 	  position: relative;
 	}
-	.rot_img:hover img.subimg_sign {
+	.block_sign:hover img.subimg_sign {
 	  opacity:1;
 	  transform: rotate(360deg);
 	}
-	.rot_img:hover img.img_sign, .rot_img img.img_sign:hover {
+	.block_sign:hover img.img_sign, .rot_img img.img_sign:hover {
 	  opacity:0;
 	  transform: rotate(360deg);
 	}
-/* --  Вращение и смена картинок*/
 
-.text_sign h1{
+	/*текста*/
+	.text_sign h1{
 	text-align: center;
 	font-size: 55px;
-}
+	}
+
+	.text_sign{
+		transition: all 0.4s ease;
+		z-index: 1;	
+	}
+	.subtext_sign{
+		transition:all 0.4s ease;
+		position: absolute;
+		transform: translateY(150px);
+		opacity: 0;
+	}
+	.subtext_sign h2{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.block_sign:hover .text_sign{
+		transition: all 0.4s ease-in-out;
+		transform: translateY(-150px);
+		opacity: 0;
+	}
+
+	.block_sign:hover .subtext_sign{
+		
+		transform: translateX(0);
+		opacity: 1;	
+	}
+/* --  анимация при наведении */
+
+
 
