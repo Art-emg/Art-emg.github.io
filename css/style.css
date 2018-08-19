@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic');
+
+body {
+	background-color: #C0D5FC;
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+
+}
+.header{
+	background-color: #3369CE;
+	height: 70px;
+}
+#log_text{
+	margin-top:5;
+	font-size: 55px;
+}
+
+
+ .img_sign{
+	width: 160px;
+}
+#zero{
+	height: 20px;
+}
+
+/* ++ Вращение и смена картинок */
+
+	div.rot_img {
+	  margin:0 auto;
+
+	}
+	div.rot_img img {
+	  width: 160px;
+	  -moz-transition: all 0.4s ease-in-out;
+	  -webkit-transition: all 0.4s ease-in-out;
+	  -o-transition: all 0.4s ease-in-out;
+	  transition: all 0.4s ease-in-out;
+	}
+
+
+	.rot_img img.img_sign{
+		position: absolute;
+	}
+	.rot_img img.subimg_sign {
+	  opacity:0;
+	  position: relative;
+	}
+	.rot_img:hover img.subimg_sign {
+	  opacity:1;
+	  transform: rotate(360deg);
+	}
+	.rot_img:hover img.img_sign, .rot_img img.img_sign:hover {
+	  opacity:0;
+	  transform: rotate(360deg);
+	}
+/* --  Вращение и смена картинок*/
+
+.text_sign h1{
+	text-align: center;
+	font-size: 55px;
+}
+
