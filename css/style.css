@@ -11,7 +11,7 @@ body {
 	height: 70px;
 }
 #log_text{
-	margin-top:5;
+	margin-top:5px;
 	font-size: 55px;
 }
 
@@ -20,7 +20,7 @@ body {
 	width: 150px;
 }
 .content{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .block_sign{
 	margin-bottom: 30px;
@@ -49,14 +49,15 @@ body {
 	.rot_img img.subimg_sign {
 	  opacity:0;
 	  position: relative;
+	  transform: rotate(-180deg);
 	}
 	.block_sign:hover img.subimg_sign {
 	  opacity:1;
-	  transform: rotate(360deg);
+	  transform: rotate(0);
 	}
 	.block_sign:hover img.img_sign, .rot_img img.img_sign:hover {
 	  opacity:0;
-	  transform: rotate(360deg);
+	  transform: rotate(180deg);
 	}
 
 	/*текста*/
