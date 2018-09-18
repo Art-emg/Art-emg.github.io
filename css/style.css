@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic');
 
 body {
-	background-color: #C0D5FC;
-		font-family: 'Amatic SC', cursive;
+	/*background-color: #C0D5FC;*/
+	font-family: 'Amatic SC', cursive;
 	font-weight: bold;
+	background-image: url("../imgs/starry_sky.jpg");
+	background-size: cover;
+
 
 }
 .header{
@@ -21,9 +24,13 @@ body {
 }
 .content{
 	margin-top: 30px;
+	color: white;
+
 }
 .block_sign{
+	margin: 0 3px;
 	margin-bottom: 30px;
+	cursor: pointer;
 
 }
 /* ++ Анимация при наведении */
@@ -31,8 +38,8 @@ body {
 	/*картинок*/
 	div.rot_img {
 	  margin:0 auto;
-
 	}
+
 	div.rot_img img {
 	  width: 150px;
 	  z-index: 2;
@@ -41,7 +48,6 @@ body {
 		  -o-transition: all 0.4s ease-in-out;
 	  transition: all 0.4s ease-in-out;
 	}
-
 
 	.rot_img img.img_sign{
 		position: absolute;
