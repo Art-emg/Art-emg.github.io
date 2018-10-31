@@ -10,12 +10,14 @@ body {
 
 }
 .header{
-	background-color: #3369CE;
+	
+	background-color: rgba(51, 105, 206, 0.7);
 	height: 70px;
 }
 #log_text{
 	margin-top:5px;
 	font-size: 55px;
+	color: #fff
 }
 
 
