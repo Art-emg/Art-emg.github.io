@@ -2,7 +2,7 @@
 	 console.log('start');
         $.ajax({
             type: "GET",
-            url: "https://img.ignio.com/r/export/utf/xml/daily/com.xml",
+            url: "http://img.ignio.com/r/export/utf/xml/daily/com.xml",
             cache: false,
             dataType: "xml",
             success: function(xml) {
