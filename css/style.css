@@ -32,9 +32,13 @@ body {
 .block_sign{
 	margin: 0 3px;
 	margin-bottom: 30px;
-	cursor: pointer;
+}
+.block_sign a{
+	text-decoration: none;
+	color: white;
 
 }
+.
 /* ++ Анимация при наведении */
 	
 	/*картинок*/
